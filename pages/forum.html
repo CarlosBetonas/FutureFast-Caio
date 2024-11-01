@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/forum.css">
+    <title>Fórum Safe Work</title>
+</head>
+
+<body>
+    <header class="header-nav">
+        <div class="logo-conteiner-nav">
+            <a href="home.html">
+                <img src="/assets/imagens/home/logo.png" alt="" class="logoNav">
+                <h1 class="logoTextNav">Safe Work</h1>
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#">Soluções <span class="arrow"></span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Página 1</a></li>
+                        <li><a href="#">Página 2</a></li>
+                        <li><a href="#">Página 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Industrias <span class="arrow"></span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Página 1</a></li>
+                        <li><a href="#">Página 2</a></li>
+                        <li><a href="#">Página 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Segurança <span class="arrow"></span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Segurança no trabalho</a></li>
+                        <li><a href="#">Página 2</a></li>
+                        <li><a href="#">Página 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Fórum <span class="arrow"></span></a>
+                    <ul class="submenu">
+                        <li><a href="/pages/forum.html">Acessar Fórum</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="btn-pai">
+            <button class="button-contato">Contato</button>
+        </div>
+    </header>
+    <div class="container">
+        <section class="forum-section">
+            <h1 class="forum-title">Fórum de Discussão</h1>
+            <form id="addForm">
+                <input type="text" id="newInfo" placeholder="Insira uma nova publicação" required maxlength="20">
+                <input type="text" id="newName" placeholder="Insira seu nome" required maxlength="20">
+                <button type="button" class="button-add" id="addButton">Publicar</button>
+            </form>
+            <ul id="infoList" class="info-list"></ul>
+        </section>
+    </div>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <div class="close-button">
+                <img src="/assets/imagens/forum/close.png" alt="" class="close-icon" id="closeModal">
+            </div>
+            <h2>Editar Comentário</h2>
+            <input type="text" id="editInput" placeholder="Edite o comentário" maxlength="20">
+            <button id="saveEdit" class="button-add">Salvar</button>
+        </div>
+    </div>
+
+
+    <script src="/javascript/forum.js"></script>
+</body>
+
+</html>

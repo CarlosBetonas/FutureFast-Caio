@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+  
+.logoNav {
+    width: 37px;
+    height: 29px;
+}
+ 
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #043873;
+    padding: 20px;
+}
+ 
+.logo-conteiner-nav {
+    display: flex;
+    align-items: center; 
+}
+ 
+.logoTextNav {
+    padding-left: 10px; 
+    color: #fff; 
+    font-size: 28px;
+}
+ 
+.btn-pai {
+    padding-right: 15px;
+}
+ 
+.button-contato {
+    background-color: #62b1ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 27px;
+    font-size: 16px;
+    cursor: pointer;
+}
+ 
+/* Menu */
+ 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+ 
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 24px;
+}
+ 
+.menu-item {
+    position: relative;
+}
+ 
+.menu-item a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+ 
+ 
+.arrow {
+    width: 10px;
+    height: 10px;
+    background-image: url('/assets/imagens/home/arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 23px;
+    margin-top: 5px;
+    transition: transform 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+ 
+ 
+.menu-item:hover > a {
+    color: #00bfff;
+}
+ 
+.menu-item:hover .arrow {
+    filter: brightness(0) saturate(100%) invert(56%) sepia(71%) saturate(3365%) hue-rotate(170deg) brightness(93%) contrast(89%);
+}
+ 
+ 
+.submenu {
+    list-style: none;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+ 
+ 
+.menu-item:hover .submenu {
+    max-height: 500px;
+    opacity: 1;
+}
+ 
+ 
+.submenu li a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+ 
+.submenu li a:hover {
+    background-color: #e2e2e2;
+}
+ 
+ 
+.hero-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #043873;
+    background-image: url(/assets/imagens/home/fundoHero.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+}
+ 
+.text-Conteiner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+ 
+.title-hero {
+    color: #fff;
+    font-size: 46px;
+    font-style: italic;
+}
+ 
+.text-hero {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+}  
+ 
+.imgHero {
+    height: 80%;
+    width: 50%;
+    background-image: url(/assets/imagens/home/imghero.png);
+    background-repeat: no-repeat;
+}
+
+.imgHero img {
+    width: 100%;
+}
+
+.section-AboutUs {
+    display: flex;
+    align-items: flex-start;
+    padding: 2%;
+}
+
+.text-conteinerAboutUS {
+    width: 50%;
+    
+}
+
+.title-aboutUs {
+    background-image: url(/assets/imagens/home/imgfundoTitile.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    font-size: 47px;
+    font-style: italic;
+    color: #212529;
+}
+
+.text-aboutus {
+    font-size: 21px;
+    padding-top: 2%;
+    padding-right: 25%;
+    color: #212529;
+}
+
+.img-conteinerAboutUS {
+    width: 50%;
+}
+
+.imgAboutUS {
+    padding: 60px;
+    width: 70%;
+    border-radius: 15px;
+    background-color: #4f9bf98e;
+}
+
+.imgAboutUS img {
+    width: 100%;
+}
+
